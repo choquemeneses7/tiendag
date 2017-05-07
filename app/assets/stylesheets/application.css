@@ -1,0 +1,59 @@
+body {
+    background-image: url(/assets/fondo.png);
+    background-repeat:no-repeat; background-size:cover;
+}
+#contenedor {
+    background-color: #fff;
+    width: 910px;
+    margin: 0px auto 0px auto;
+    padding: 10px;
+    border: solid 1px #ccc;
+    box-shadow: 1px 1px 5px #000;
+    -moz-box-shadow: 1px 1px 5px #000;
+    -webkit-box-shadow: 1px 1px 5px #000;
+}
+header {
+    text-align: center;
+}
+nav ul{
+    width: 600px;
+    margin: 0px auto 0px auto;
+}
+nav li{
+    float: left;
+    width: 300px;
+    height: 300px;
+    list-style: none;
+    border: solid 1px #999;
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    -moz-border-radius: 5px 15px 5px 5px;
+    -webkit-border-radius: 5px 15px 5px 5px;
+    text-align: center;
+}
+nav .google_mas {
+    background-image: url(/assets/celulares_logo.png);
+}
+nav .facebook {
+    background-image: url(/assets/computadora_logo.png);
+}
+nav .twitter {
+    background-image: url(/assets/tablet_logo.png);
+}
+nav a {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+section .imagen_logo {
+    float: left;
+    width: 40px;
+    height:40px;
+}
+
+section .descipcion p {
+    text-align: justify;
+}
+.clear {
+    clear: both;
+}

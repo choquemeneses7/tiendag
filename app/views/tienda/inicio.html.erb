@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Prueba</title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<body>
+<div id="contenedor">
+  <header>
+    <h1> Brunei Corp </h1>
+  </header>
+  <div class="imagen_logo">
+
+    <%= link_to image_tag("celulares_logo.png", :border=>0), :controller => "tienda", :action => "celular" %>
+    <%= link_to image_tag("computadora_logo.png", :border=>0), :controller => "tienda", :action => "computadora" %>
+    <%= link_to image_tag("tablet_logo.png", :border=>0), :controller => "tienda", :action => "tablet" %>
+  </div>
+
+
+  <div class="clear"></div>
+  <section>
+    <%= yield %>
+  </section>
+</div>
+
+
+</body>
+</html>
