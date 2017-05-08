@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
-  get 'tienda/inicio'
+  resources :products
+  get 'search/create'
+
+  root to:'tienda#inicio'
 
   get 'tienda/celular'
 

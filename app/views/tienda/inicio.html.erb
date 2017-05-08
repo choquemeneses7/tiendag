@@ -10,8 +10,16 @@
 
 <body>
 <div id="contenedor">
+
   <header>
     <h1> Brunei Corp </h1>
+    <div id="resultados"></div>
+    <%= form_tag"search/create", method: :get, remote: true, id:"search-form" do %>
+    <%= text_field_tag :keyword, nil, placeholder: "Busca un Producto" %>
+        <%= content_tag :button, type: :submit do %>
+        Buscar
+            <% end %>
+    <% end %>
   </header>
   <div class="imagen_logo">
 
